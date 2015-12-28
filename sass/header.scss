@@ -1,0 +1,67 @@
+/*==================
+    hidden header
+====================*/
+.h-header {
+  background-color: #f5f7fa;
+  border-bottom: 1px solid #E6E9ED;
+  box-shadow: 0 1px 0 #e6e9ed;
+  overflow: hidden;
+}
+.contacts {
+  font-family: "Source Sans Pro",sans-serif;;
+  font-size: 0.75em;
+  font-weight: 400;
+}
+.contacts .mail {
+  padding-right: 1.8em;
+}
+.contacts .mail::before {
+  content: url('../images/icon-mail-1.png');
+}
+.contacts .mail:hover {
+  color: #00bc9c;
+}
+.contacts .mobile::before {
+  content: url('../images/icon-mobile.png');
+  padding-right: 5px;
+  padding-top: 5px;
+}
+
+.social-icons {
+  cursor: default;
+}
+.social-icons li {
+  display: inline;
+  padding: 13px 10px;
+}
+
+/*==================
+    header
+====================*/
+.navbar {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #506a85;
+  border: none;
+  background-color: #fff;
+
+}
+.navbar-nav > li > a {
+  padding: 15px 20px;
+}
+.navbar-nav > li > a:hover {
+  color: #00bc9c;
+}
+.navbar-nav a:hover {
+  background-color: #e7e7e7;
+  color: #00bc9c;
+}
+button.navbar-toggle {
+  background-color: #1abb9c;
+  color: #fff;
+}
+.search img {
+  float: right;
+  margin-top: 20px;
+}

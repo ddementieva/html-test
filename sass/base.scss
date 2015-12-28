@@ -1,0 +1,69 @@
+/* ie hack
+ don't remove that style*/
+.m-page {
+  display: block;
+}
+
+/* use to align content */
+.container {
+  min-width: 360px;
+  margin: 0 auto;
+  padding-bottom: 2%;
+}
+
+.container::before,
+.container::after,
+.clearfix::before,
+.clearfix::after{
+  content: '';
+  display: table;
+}
+.container::after,
+.clearfix::after{
+  clear: both;
+}
+
+/*=================================================================================================================
+    YOUR STYLE here
+  ================================================================================================================= */
+body {
+  font-family: 'Source Sans Pro', 'Lato', sans-serif;
+  background-color: white;
+}
+.wrapper {
+  overflow: hidden;
+}
+
+
+/*=================================================================================================================
+    common styles
+  ================================================================================================================= */
+
+.container {
+  margin: 0 auto;
+  min-width: 360px;
+}
+p {
+  font-family: $text-font;
+  color: $text-color;
+}
+h1 {
+  color: white;
+  font-family: $headings-font;
+}
+h2, h3, h4 {
+    font-family: $headings-font;
+    color: $headings-color;  
+}
+h1 {
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+}
+a, a:hover {
+  text-decoration: none;
+}
+
+
