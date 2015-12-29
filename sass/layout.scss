@@ -1,17 +1,47 @@
 /*==================
     main page
 ====================*/
-.slides comment {
-  position: absolute;
-  right: 15%;
-  bottom: 20px;
-  left: 15%;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+.slides { 
+
+width: 100%;
+text-align: center;
+right: 15%;
+bottom: 20px;
+left: 15%;
+padding-top: 20px;
+padding-bottom: 20px;
+
+
+
+.first {
+    background: url("../images/background.png");
+    p {
+    width: 70%;
+    margin: 50px auto 100px;
+}
+}
+
+.second {
+    background: url("../images/slide2.jpg");
+}
+.third {
+    background: url("../images/slide3.jpg");
+    p {
+    width: 70%;
+    margin: 50px auto 100px;
+}
+}
+.fourth {
+    background: url("../images/slide4.jpg");
+}
+.fifth {
+    background: url("../images/slide5.jpg");
+    p {
+    width: 70%;
+    margin: 50px auto 100px;
+}
+}
+
 }
 /*==================
     description

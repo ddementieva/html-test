@@ -5817,31 +5817,21 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+/*==================
+    main slider
+====================*/
 @media screen and (max-width: 767px) {
-  .part {
+  .slides {
     padding: 100px 0 50px; }
-  .part h2 {
+  .slides h2 {
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 40px; }
-  .part p {
+  .slides p {
     font-size: 20px;
     font-weight: 400;
     line-height: 130%;
     padding-bottom: 40px; } }
-
-@media screen and (min-width: 768px) {
-  .part {
-    padding: 130px 0; }
-  .part h2 {
-    font-size: 44px;
-    font-weight: 700;
-    margin-bottom: 40px; }
-  .part p {
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 150%;
-    padding-bottom: 80px; } }
 
 /*==================
     header
@@ -5929,10 +5919,36 @@ button.close {
   .description article img {
     padding-top: 15px; } }
 
+@media screen and (max-width: 767px) {
+  .part {
+    padding: 100px 0 50px; }
+  .part h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px; }
+  .part p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+    padding-bottom: 40px; } }
+
+@media screen and (min-width: 768px) {
+  .part {
+    padding: 130px 0; }
+  .part h2 {
+    font-size: 44px;
+    font-weight: 700;
+    margin-bottom: 40px; }
+  .part p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 150%;
+    padding-bottom: 80px; } }
+
 /*==================
     footer
 ====================*/
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 767px) {
   .footer1 .inner {
     padding-top: 25px;
     padding-bottom: 15px; }
@@ -5972,7 +5988,7 @@ button.close {
     border-radius: 3px;
     box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
     position: absolute;
-    right: 1.2em;
+    right: -9em;
     top: -0.2em;
     padding: 0.2em;
     margin: 5px 5px 15px 0;
@@ -6088,17 +6104,33 @@ a, a:hover {
 /*==================
     main page
 ====================*/
-.slides comment {
-  position: absolute;
+.slides {
+  width: 100%;
+  text-align: center;
   right: 15%;
   bottom: 20px;
   left: 15%;
-  z-index: 10;
   padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+  padding-bottom: 20px; }
+  .slides .first {
+    background: url("../images/background.png"); }
+    .slides .first p {
+      width: 70%;
+      margin: 50px auto 100px; }
+  .slides .second {
+    background: url("../images/slide2.jpg"); }
+  .slides .third {
+    background: url("../images/slide3.jpg"); }
+    .slides .third p {
+      width: 70%;
+      margin: 50px auto 100px; }
+  .slides .fourth {
+    background: url("../images/slide4.jpg"); }
+  .slides .fifth {
+    background: url("../images/slide5.jpg"); }
+    .slides .fifth p {
+      width: 70%;
+      margin: 50px auto 100px; }
 
 /*==================
     description
@@ -6272,6 +6304,7 @@ button.navbar-toggle {
   .footer1 .form {
     position: relative; }
   .footer1 [type='email'] {
+    width: 272px;
     padding: 0 100px 0 10px;
     background-color: rgba(255, 255, 255, 0.15);
     border-radius: 3px;
@@ -6280,7 +6313,7 @@ button.navbar-toggle {
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
-    font-family: 'Source Sans Pro',sans-serif; }
+    font-family: "Source Sans Pro", sans-serif; }
   .footer1 input.form-control[type='submit'] {
     width: 88px;
     height: 30px;
@@ -6291,7 +6324,7 @@ button.navbar-toggle {
     border-radius: 3px;
     box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
     position: absolute;
-    right: 1.2em;
+    right: -1em;
     top: -0.2em;
     padding: 0.2em;
     margin: 5px 5px 15px 0;
@@ -6349,6 +6382,35 @@ a.more-btn:hover {
 .get-touch .email::before {
   content: url("../images/icon-mail-1.png");
   padding-right: 5px; }
+
+a.more-btn {
+  color: #a3b1bf;
+  font-size: 15px;
+  font-weight: 700; }
+
+a.more-btn::after {
+  content: url("../images/icon-right.png");
+  padding-left: 5px; }
+
+a.more-btn:hover {
+  color: #00bc9c; }
+
+.works {
+  margin-bottom: 5px;
+  position: relative; }
+  .works a {
+    background-color: #1abb9c; }
+  .works a:hover .hover:before {
+    font-size: 30px;
+    padding-top: 25%;
+    padding-left: 60%;
+    content: '+';
+    position: absolute;
+    color: #fff;
+    background-color: rgba(26, 187, 156, 0.9);
+    width: 95%;
+    height: 100%;
+    z-index: 100; }
 
 /*==================
     footer2
