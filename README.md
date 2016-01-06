@@ -1,5 +1,5 @@
 # html-test
-| #       | Name           | Command  |
+| #       | Description           | Command  |
 | :------------- |:-------------| :-----|
 | 1      | Start Apache | `sudo service apache2 start` |
 | 2      | Stop Apache      |   `sudo service apache2 stop` |
