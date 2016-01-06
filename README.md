@@ -11,6 +11,7 @@ Markdown | Less | Pretty
 1 | 2 | 3
 
 
+# | Name | Command
 --- | --- | ---
 Command #1 | Start Apache | sudo service apache2 start
 
