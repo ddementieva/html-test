@@ -1,5 +1,5 @@
 # html-test
-| Tables        | Are           | Cool  |
+| #       | Name           | Command  |
 | ------------- |:-------------:| -----:|
 | Command #1      | Start Apache | sudo service apache2 start |
 | Command #2      | Stop Apache      |   sudo service apache2 stop |
