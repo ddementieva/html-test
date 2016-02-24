@@ -24,15 +24,9 @@ Markdown | Less | Pretty
 | `gulp serve` |
 
 
-# Recipe
+### Factory
 
-FROM [codenvy/ubuntu_jdk8](https://hub.docker.com/r/codenvy/ubuntu_jdk8/) 
+[![Contribute](https://codenvy.com/factory/resources/codenvy-contribute.svg)](http://beta.codenvy.com/f?id=5use7stej9bi9mxd)
 
-ENV GRADLE_VERSION=2.3 
 
-ENV GRADLE_HOME /home/user/gradle-$GRADLE_VERSION 
 
-ENV PATH $GRADLE_HOME/bin:$PATH 
-
-RUN wget -P /home/user/ --quiet https://services.gradle.org/distributions/gradle-$GRADLE_VERSION-bin.zip && \ 
-    cd /home/user/ && unzip gradle-$GRADLE_VERSION-bin.zip && rm gradle-$GRADLE_VERSION-bin.zip
